@@ -10,3 +10,8 @@ npm i -D  typescript@5.2.2 ts-loader@9.5.0
 
 
 npm i -D ts-node@10.9.1 @types/node@20.8.3 @types/webpack@5.28.3 @types/webpack-dev-server@4.7.2
+
+npm i -D webpack-dev-server@4.15.1
+
+npm run start --  --env port=5000
+
