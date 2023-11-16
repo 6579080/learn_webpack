@@ -5,8 +5,13 @@ import  webpack from 'webpack';
 import  HtmlWebpackPlugin from "html-webpack-plugin";
 import  path from "path";
 
+type Mode = 'production' | 'development';
 
-export default(env: any) => {
+interface EnvVariables {
+    mode: Mode
+}
+
+export default(env: EnvVariables) => {
 
     const config: webpack.Configuration = {
 
