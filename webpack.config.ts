@@ -22,7 +22,7 @@ export default(env: EnvVariables) => {
 
 
         mode: env.mode ?? 'development',
-        entry: path.resolve(__dirname, 'src', 'index.ts'),
+        entry: path.resolve(__dirname, 'src', 'index.tsx'),
         output: {
             filename: '[name][contenthash].js',
             path: path.resolve(__dirname, 'build'),
@@ -35,6 +35,10 @@ export default(env: EnvVariables) => {
         ],
         module: {
             rules: [
+                {
+                    test: /\.css$/i,
+                    use: ["style-loader", "css-loader"],
+                },
                 {
                     test: /\.tsx?$/,
                     use: 'ts-loader',

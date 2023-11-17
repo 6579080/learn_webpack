@@ -15,3 +15,13 @@ npm i -D webpack-dev-server@4.15.1
 
 npm run start --  --env port=5000
 
+npm i  react@18.2.0 react-dom@18.2.0
+npm i -D @types/react@18.2.25 @types/react-dom@18.2.11
+
+
+
+https://webpack.js.org/loaders/css-loader/
+npm i -D css-loader@6.8.1
+
+
+npm i -D style-loader@3.3.3
