@@ -30,7 +30,7 @@ export default(env: EnvVariables) => {
             clean: true,
         },
         plugins: [
-            new MiniCssExtractPlugin({
+            isDev && new MiniCssExtractPlugin({
                 filename: 'css/[name][contenthash:8].css',
                 chunkFilename: 'css/[name][contenthash:8].css',
                 }
@@ -38,14 +38,14 @@ export default(env: EnvVariables) => {
             new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html')}),
             new webpack.ProgressPlugin(),
             // new HtmlWebpackPlugin()
-        ],
+        ].filter(Boolean),
         module: {
             rules: [
                 {
                     test: /\.s[ac]ss$/i,
                     use: [
                         // Creates `style` nodes from JS strings
-                        MiniCssExtractPlugin.loader,
+                        isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
                         // Translates CSS into CommonJS
                         "css-loader",
                         // Compiles Sass to CSS
