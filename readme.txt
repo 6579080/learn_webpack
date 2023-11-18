@@ -25,3 +25,12 @@ npm i -D css-loader@6.8.1
 
 
 npm i -D style-loader@3.3.3
+
+https://webpack.js.org/loaders/sass-loader/#getting-started
+npm i -D sass@1.69.0 sass-loader@13.3.2
+
+https://webpack.js.org/plugins/mini-css-extract-plugin/
+npm i -D mini-css-extract-plugin@2.7.6
+
+
+
