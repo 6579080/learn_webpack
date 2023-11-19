@@ -1,11 +1,6 @@
-// const path = require("path");
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const webpack = require('webpack');
 import  webpack from 'webpack';
-import  HtmlWebpackPlugin from "html-webpack-plugin";
 import  path from "path";
 
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {buildWebpack} from "./config/build/buildWebpack";
 import {BuildMode, BuildPaths} from "./config/build/types/types";
 
