@@ -32,5 +32,6 @@ npm i -D sass@1.69.0 sass-loader@13.3.2
 https://webpack.js.org/plugins/mini-css-extract-plugin/
 npm i -D mini-css-extract-plugin@2.7.6
 
-
+https://reactrouter.com/en/main/start/tutorial
+npm i react-router-dom@6.16.0
 
